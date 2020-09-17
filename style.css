@@ -36,46 +36,50 @@
 }
 
 #text a {
-  text-align: center;
+  letter-spacing: 10px;
   font-size: 18px;
-  padding: 20px;
-  color: #000;
+  text-align: center;
+  color: #07c731;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding-left: 50px;
+  text-decoration: none;
 }
 
 #text a:hover {
-  color: #a5e610;
+  color: #9b0720;
 }
 
-#text .imgme img {
-  -webkit-filter: invert(20%) sepia(10%) saturate(1679%) hue-rotate(50deg) brightness(100%) contrast(70%);
-          filter: invert(20%) sepia(10%) saturate(1679%) hue-rotate(50deg) brightness(100%) contrast(70%);
+.imgme img {
+  width: 25px;
+  color: #f1b614;
+  background: #000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin: 20px;
+  margin-left: 30px;
 }
 
-#text .imgme:hover {
-  -webkit-filter: invert(14%) sepia(83%) saturate(785%) hue-rotate(174deg) brightness(94%) contrast(92%);
-          filter: invert(14%) sepia(83%) saturate(785%) hue-rotate(174deg) brightness(94%) contrast(92%);
+.imgme img:hover {
+  color: #690909;
 }
 
 #banner {
   width: 100%;
   height: 100vh;
-  background-color: #777373;
+  background-color: #810d0d;
 }
 
 #adout {
   width: 100%;
   height: 100vh;
-  background: #b1eed7;
-  color: #000;
+  background: #06422b;
+  color: #da0e0e;
   text-align: center;
 }
 
 #adout h2 {
-  font-size: 200px;
+  font-size: 150px;
   letter-spacing: 20px;
   padding: 20px;
 }
