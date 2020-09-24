@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
 // 主色與次要色
 $color-main: #250330
-$color-sub: #690909
-
+$color-sub: #096929
+$color-bg-gray: #9b0720
 *
     margin: 0
     padding: 0
@@ -15,10 +15,10 @@ $color-sub: #690909
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     padding: 20px 0
-    box-shadow: 0 6px 6px rgba(228, 206, 206, 0.3)
+    box-shadow: 0 6px 6px rgba(26, 11, 165, 0.3)
     position: fixed
     width: 100%
-    background: #eecece
+    background: #e7b017
 
 
     .logo
@@ -37,7 +37,7 @@ $color-sub: #690909
         text-align: center
         color: #07c731
         transition: 0.5s
-        padding-left: 50px
+        padding-left: 95px
         text-decoration: none
         &:hover
             color: #9b0720
@@ -56,7 +56,7 @@ $color-sub: #690909
 #banner
     width: 100%
     height: 100vh   
-    background-color: #810d0d   
+    background-color: #0d6081   
 
 #adout
     width: 100%
@@ -89,6 +89,51 @@ $color-sub: #690909
     &:hover
         background: $color-main
         color: #f1a0a0
+
+.title
+    font-size: $color-bg-gray
+    padding: 50px
+    text-align: center
+    font-size: 50px
+
+#works
+    height: 100vh
+    background: $color-bg-gray
+
+#work-box
+    width: 1000px
+    display: grid
+    margin: 0 auto
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px 20px
+    grid-gap: 20px 30px
+
+.work-1
+    img
+        display: block
+        width: 100%
+        height: 200px
+        background: #0a813c
+
+    h2
+        text-align: center
+        transform: translateY(-30px)
+
+    span
+        display: inline-block
+        border: 1.5px solid #000000
+        border-radius: 40px
+        padding: 5px 10px
+        margin-top: 20px
+        font-size: 10px
+
+.button-box-1
+    text-align: center
+    margin-top: 30px
+
+        
+
+        
 
 
 
