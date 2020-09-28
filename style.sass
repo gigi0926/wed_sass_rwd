@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
 // 主色與次要色
 $color-main: #250330
-$color-sub: #690909
+$color-sub: #660969
+$color-bg-gray: #235d6e
 
 *
     margin: 0
@@ -25,47 +26,51 @@ $color-sub: #690909
         font-size: 40px
         text-decoration: none
         transition: 0.5s
-        padding: 20px
+        padding: 10px
         text-align: center
+        padding-left: 30px
+        color: #474107
 
         &:hover
             color: $color-sub
-#text       
+.text       
     a
         letter-spacing: 10px
         font-size: 18px
         text-align: center
         color: #07c731
         transition: 0.5s
-        padding-left: 50px
+        padding-left: 40px
         text-decoration: none
+        
         &:hover
-            color: #9b0720
-.imgme
+            color: #4e610a
+.myimg
     img
-        width: 25px
-        color: #f1b614
-        background: #000
+        width: 30px
+        color: #043807
         transition: 0.5s
-        margin: 20px
+        margin: 25px
+        text-align: center
         margin-left: 30px
-
+        float: left
+        filter: invert(40%) sepia(61%) saturate(40%) hue-rotate(536deg) brightness(80%) contrast(76%);
         &:hover
-            color: $color-sub
+            filter: invert(20%) sepia(31%) saturate(30%) hue-rotate(336deg) brightness(100%) contrast(86%);
         
 #banner
     width: 100%
-    height: 100vh   
+    height: 70vh   
     background-color: #810d0d   
 
 #adout
     width: 100%
-    height: 100vh
+    height: 90vh
     background: #06422b       
     color: #da0e0e
     text-align: center
     h2
-       
+        text-align: center
         font-size: 150px
         letter-spacing: 20px
         padding: 20px
@@ -79,8 +84,9 @@ $color-sub: #690909
     font-size: 36px
     text-align: center
     padding-top: 30px
+    
 .button-box
-    border: 2px solid #000
+    border: 2px solid #3f1414
     transition: 0.4s
     text-decoration: none
     padding: 10px
@@ -90,6 +96,87 @@ $color-sub: #690909
         background: $color-main
         color: #f1a0a0
 
+.title
+    text-align: center
+    font-size: 30px
+    padding: 5px
+    
+
+#works
+    height: 100vh
+    background: $color-bg-gray
+
+#work-box
+    width: 1000px
+    display: grid
+    margin: 0 auto
+    // repeat(數量，一格的寬度)
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 305px)
+    // 格線間隙：上下 左右
+    grid-gap: 20px 35px
+    
+
+.work-box-1
+    img
+        display: block
+        background: #570d0d
+        width: 100%
+        height: 250px
+
+    h2
+        text-align: center
+        transform: translateY(-32px)  
+        color: #656545
+    span
+        display: inline-block
+        border: 2px solid #09c722
+        border-radius: 10px
+        margin-top: 10px
+        padding: 5px
+        font-size: 15px
+
+footer
+    background: #b32366
+    height: 30vh       
+    text-align: center
+    padding: 30px
+   
+#logo-logo
+    color: #52bd0a
+    text-decoration: none
+    font-size: 35px
+    line-height: 20px
+    &:hover
+        color: $color-sub
+
+#text1
+    a
+        text-align: center
+        color: #470d0d
+        letter-spacing: 20px
+        text-decoration: none
+        padding-left: 30px
+        font-size: 20px
+        line-height: -50px
+        &:hover
+            color: $color-sub
+
+#img1
+    img
+        filter: invert(9%) sepia(11%) saturate(6%) hue-rotate(336deg) brightness(100%) contrast(86%);
+        width: 40px
+        margin: 30px
+        &:hover
+            filter: invert(50%) sepia(700%) saturate(30%) hue-rotate(500deg) brightness(100%) contrast(86%);
+             
+        
+
+
+             
+
+        
+    
 
 
                 
