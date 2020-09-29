@@ -4,13 +4,18 @@ $color-main: #250330
 $color-sub: #660969
 $color-bg-gray: #235d6e
 
+// RWD
+$desktop: 1025px
+$table: 1024px
+$mobile: 767px        
+
 *
     margin: 0
     padding: 0
     box-sizing: border-box
     font-family: 微軟正黑體
-    color: $color-main
-        
+    color: $color-sub
+     
 
 #navme
     display: grid
@@ -22,17 +27,20 @@ $color-bg-gray: #235d6e
     background: #e7b017
 
 
-    .logo
-        font-size: 40px
-        text-decoration: none
-        transition: 0.5s
-        padding: 10px
-        text-align: center
-        padding-left: 30px
-        color: #474107
+        
 
-        &:hover
-            color: $color-sub
+.logo
+    font-size: 40px
+    text-decoration: none
+    transition: 0.5s
+    padding: 10px
+    text-align: center
+    padding-left: 30px
+    color: #474107
+    grid-area: logo
+
+    &:hover
+        color: $color-sub
 .text       
     a
         letter-spacing: 10px
@@ -43,9 +51,13 @@ $color-bg-gray: #235d6e
         padding-left: 80px
         text-decoration: none
         
-
         &:hover
             color: #4e610a
+    @media screen and (max-width: $table)
+        display: none
+
+
+    
 .myimg
     img
         width: 30px
@@ -98,10 +110,6 @@ $color-bg-gray: #235d6e
         color: #f1a0a0
         
 
-
-        
-
-        
 
 .title
     text-align: center
