@@ -22,10 +22,6 @@
   background: #e7b017;
 }
 
-@media screen and (max-width: 1024px) and (max-width: 767px) {
-  padding: 5px 6px;
-}
-
 #menu {
   grid-area: menu;
 }
@@ -120,20 +116,20 @@
 
 #banner {
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   background-color: #810d0d;
 }
 
 #adout {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background: #06422b;
   color: #da0e0e;
   text-align: center;
 }
 
 #adout h1 {
-  padding: 10px;
+  padding: 20px;
 }
 
 #adout h2 {
@@ -192,7 +188,7 @@
 }
 
 #works {
-  height: 60vh;
+  height: 80vh;
   background: #235d6e;
 }
 
