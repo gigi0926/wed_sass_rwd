@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網遊 關於我</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="top">
+    <!-- 導覽列 -->
+    <nav id="navme">
+        <div>
+            <a href="./index.html" class="logo">[網遊]</a>
+        </div>
+        <img src="../index.html" alt="選單" id="menu">
+        <div class="text">
+            <a href="./about/">關於我</a>
+            <a href="./works/">作品集</a>
+            <a href="./content/">連絡我</a>
+        </div>
+
+        <div class="myimg">
+            <a href=""><img src="../img/" alt="github"></a>
+            <a href=""><img src="../img//youtobe.png" alt="youtobe"></a>
+            <a href=""><img src="../img//fb.png" alt="fb"></a>
+            <a href=""><img src="../img//email.png" alt="email"></a>
+        </div>
+    </nav>
+   
+
+    <footer>
+        <!-- gte-offset 位移量 -->
+        <img src="../index.htmlimg/arrow.png" alt="回最頂部" id="arrow" data-gte-target="top" data-gte-offset=-100>
+        <div>
+            <a href="./img/" id="logo-logo">[網遊]</a>
+        </div>
+        <div id="img1">
+            <a href=""><img src="../img/" alt="github"></a>
+            <a href=""><img src="../img//youtobe.png" alt="youtobe"></a>
+            <a href=""><img src="../img//fb.png" alt="fb"></a>
+            <a href=""><img src="../img//email.png" alt="email"></a>
+        </div>
+        <div id="text1">
+            <a href="">關於我</a>
+            <a href="">作品集</a>
+            <a href="">連絡我</a>
+        </div>
+        <div class="foot-text">
+            <p>&2020 網遊&</p>
+        </div>
+    </footer>
+    <script src="https://kid421.github.io/Web_JavaScript_GoToElement/goToElement.js"></script>
+    <!--  jquery cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick cdn   -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $("#banner").slick({
+            arrows: false,
+            dots: true,
+            dotsClass: "slick-dots dots"
+        })
+    </script>
+    
+    <!-- aos cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+    
+
+</body>
+
+</html>

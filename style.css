@@ -20,6 +20,25 @@
   position: fixed;
   width: 100%;
   background: #e7b017;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1025px) {
+  #navme {
+        grid-template-areas: "logo text myimg";
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #navme {
+        grid-template-areas: "logo myimg menu";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #navme {
+    padding: 10px 6px;
+  }
 }
 
 #menu {
@@ -95,7 +114,7 @@
   color: #043807;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin: 25px;
+  margin: 5px;
   text-align: center;
   margin-left: 30px;
   float: left;
@@ -116,8 +135,32 @@
 
 #banner {
   width: 100%;
-  height: 80vh;
-  background-color: #810d0d;
+  height: 100vh;
+  background-color: #746262;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  #banner {
+    height: 100%;
+  }
+  #banner .slick-track {
+    height: 400px;
+  }
+  #banner img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner .slick-track {
+    height: 500px;
+  }
+}
+
+.dots {
+  bottom: 30px;
 }
 
 #adout {
@@ -307,5 +350,15 @@ footer {
   text-align: center;
   padding-left: 20px;
   letter-spacing: 10px;
+}
+
+#arrow {
+  position: fixed;
+  cursor: pointer;
+  right: 30px;
+  bottom: 30px;
+  background: #074a4d;
+  border-radius: 50%;
+  padding: 15px;
 }
 /*# sourceMappingURL=style.css.map */
