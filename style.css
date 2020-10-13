@@ -54,7 +54,7 @@
 @media screen and (max-width: 1024px) {
   #menu {
     display: block;
-    margin-left: auto;
+    margin-left: 150px;
   }
 }
 
@@ -65,13 +65,13 @@
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
-  padding-left: 30px;
+  margin-left: 60px;
   color: #474107;
   grid-area: logo;
 }
@@ -85,7 +85,7 @@
 }
 
 .text a {
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   font-size: 25px;
   text-align: center;
   color: #07c731;
@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 767px) {
   .myimg img {
-    margin-left: 0;
+    margin-left: auto;
   }
 }
 
